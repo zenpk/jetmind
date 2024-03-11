@@ -17,5 +17,8 @@
         "path": "./themes/JetMind-color-theme.json"
       }
     ]
+  },
+  "repository": {
+    "url": "https://github.com/zenpk/jetmind"
   }
 }
