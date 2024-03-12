@@ -1,5 +1,6 @@
 {
   "name": "JetMind",
+  "type": "dark",
   "colors": {
     "actionBar.toggledBackground": "#383a49",
     "activityBarBadge.background": "#007acc",

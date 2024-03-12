@@ -5,7 +5,7 @@ const settingsKey = new Map();
 fs.readFile("./raw.json", "utf8")
   .then((data) => {
     const obj = JSON.parse(data);
-
+    delete obj["$schema"];
     // cascading settings
     obj.tokenColors.forEach((token) => {
       const scope = token.scope;
@@ -56,7 +56,7 @@ fs.readFile("./raw.json", "utf8")
     fs.readFile("./semantic.json")
       .then((data) => {
         const semantic = JSON.parse(data);
-        const outObj = { ...obj, ...semantic };
+        const outObj = { name: "JetMind", ...obj, ...semantic };
         // output
         const jsonString = JSON.stringify(outObj, null, 2);
         fs.writeFile("./themes/JetMind-color-theme.json", jsonString, "utf8");
