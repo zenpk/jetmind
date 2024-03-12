@@ -34,6 +34,7 @@ fs.readFile("./raw.json", "utf8")
           scopes = value;
         }
         scopes.push(k);
+        scopes.sort();
         settingsKey.set(objKey, scopes);
       } else {
         settingsKey.set(objKey, k);
@@ -43,16 +44,26 @@ fs.readFile("./raw.json", "utf8")
     // replace output obj
     const combined = [];
     settingsKey.forEach((v, k) => {
-      combined.push({
-        scope: v,
-        settings: JSON.parse(k),
-      });
+      const settings = JSON.parse(k);
+      if (Object.keys(settings).length > 0) {
+        combined.push({
+          scope: v,
+          settings: settings,
+        });
+      }
     });
     obj.tokenColors = combined;
-
-    // output
-    const jsonString = JSON.stringify(obj, null, 2);
-    fs.writeFile("./themes/JetMind-color-theme.json", jsonString, "utf8");
+    fs.readFile("./semantic.json")
+      .then((data) => {
+        const semantic = JSON.parse(data);
+        const outObj = { ...obj, ...semantic };
+        // output
+        const jsonString = JSON.stringify(outObj, null, 2);
+        fs.writeFile("./themes/JetMind-color-theme.json", jsonString, "utf8");
+      })
+      .catch((e) => {
+        console.log(e);
+      });
   })
   .catch((e) => {
     console.log(e);

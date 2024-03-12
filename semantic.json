@@ -1,0 +1,38 @@
+{
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "class": "#ffc66d",
+    "property": "#c77dbb",
+    "type": "#6fafbd",
+    "function": "#56a8f5",
+    "number": "#bcbec4",
+    "parameter": {
+      "italic": true
+    },
+    "property.declaration": {
+      "foreground": "#c77dbb"
+    },
+    "variable.declaration.readonly.local": {
+      "foreground": "#bcbec4",
+      "italic": false
+    },
+    "variable.readonly.local": {
+      "foreground": "#bcbec4",
+      "italic": false
+    },
+    "variable.defaultLibrary": { "foreground": "#c77dbb", "italic": true },
+    "variable.readonly": { "foreground": "#c77dbb", "italic": true },
+    "variable.readonly.defaultLibrary": {
+      "foreground": "#cf8e6d",
+      "italic": true
+    },
+    "variable.other.constant": { "foreground": "#c77dbb", "italic": true },
+    "variable.readonly.ts": { "foreground": "#cf8e6d", "italic": true },
+    "interface": { "foreground": "#6fafbd" },
+    "entity.name.type": { "foreground": "#6fafbd" },
+    "type.defaultLibrary": { "foreground": "#cf8e6d" },
+    "namespace": {
+      "foreground": "#afbf7e"
+    }
+  }
+}
