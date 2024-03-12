@@ -4,10 +4,12 @@ A VSCode color theme inspired by JetBrains' Dark and IdeaVim. Based on Default D
 
 ![demo](https://raw.githubusercontent.com/zenpk/jetmind/main/demo.png)
 
-## Customization
+NOTE: This theme is currently under active development and colors may change at any time. Any suggestions are welcome!
+
+## Build
 
 1. Add your colors to `settings.json`
 2. `Ctrl+Shift+P` -> Developer: Generate Color Theme From Current Settings
 3. Copy the generated JSON to `raw.json`
 4. Copy the semantic color settings to `semantic.json`
-5. `node reduce.js` -> outputs to `themes/JetMind-color-theme.json`
+5. `node build.js` -> outputs to `themes/JetMind-color-theme.json`
