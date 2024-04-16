@@ -3,7 +3,11 @@
   "displayName": "JetMind",
   "description": "Color theme inspired by JetBrains' Dark",
   "publisher": "zenpk",
-  "version": "0.0.5",
+  "version": "0.0.6",
+  "scripts": {
+    "build": "node ./build.js",
+    "publish": "vsce publish"
+  },
   "engines": {
     "vscode": "^1.87.0"
   },

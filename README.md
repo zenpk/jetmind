@@ -14,7 +14,7 @@ NOTE: This theme is currently under active development and colors may change at 
 2. `Ctrl+Shift+P` -> Developer: Generate Color Theme From Current Settings
 3. Copy the generated JSON to `raw.json`
 4. Copy the semantic color settings to `semantic.json`
-5. `node build.js` -> outputs to `themes/JetMind-color-theme.json`
+5. `npm run build` -> outputs to `themes/JetMind-color-theme.json`
 
 ## Recommended Settings
 

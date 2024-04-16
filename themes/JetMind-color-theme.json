@@ -82,6 +82,7 @@
       "scope": [
         "constant",
         "constant.language",
+        "keyword",
         "keyword.control",
         "keyword.operator.expression",
         "keyword.operator.new",
@@ -243,7 +244,6 @@
         "constant.character",
         "constant.other.option",
         "entity.name.function.preprocessor",
-        "keyword",
         "keyword.operator.alignas",
         "keyword.operator.alignof",
         "keyword.operator.cast",

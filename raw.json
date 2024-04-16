@@ -460,9 +460,11 @@
 			}
 		},
 		{
-			"scope": "punctuation.definition",
+			"scope": [
+				"keyword"
+			],
 			"settings": {
-				"fontStyle": ""
+				"foreground": "#CF8E6D"
 			}
 		},
 		{
